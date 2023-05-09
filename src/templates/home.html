@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="app" data-token='{{ csrf_token }}' {% if user.is_authentificated %}data-user="{{user}}" {% endif %}></div>
+
+{% endblock content %}
